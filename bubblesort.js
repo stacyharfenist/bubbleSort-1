@@ -26,17 +26,10 @@ function swap (elemOne, elemTwo, i/*i is the index of elemOne*/, array){
  array[i+1] = elemOne;
  swaps++
  return array;
-};
+}
 
 function compare(elemOne, elemTwo) {
     newCompare++
     if(elemOne > elemTwo) return true;
     else return false;
 }
-
-//[6, 10, 4, 15]
-//call compare, not call swap; call compare, YES call swap; call compare, not call swap
-//[[6,4,10,15]]
-//call compare, call swap, call compare, don't call swap
-//[4,6,10,15]
-//call compare, know it's done
